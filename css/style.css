@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 15px;
 }
 
 body {
@@ -10,43 +11,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1440px;
-  height: 100vh;
+  min-height: 100vh;
   margin: auto;
 }
-body div.container {
+body .main {
   background: hsl(0deg, 0%, 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 15px;
-  max-width: 270px;
-}
-body div.container main.main {
-  padding: 10px;
+  max-width: 20em;
+  padding: 1em;
   text-align: center;
+  border-radius: 1em;
 }
-body div.container main.main div.image img {
-  width: 220px;
-  border-radius: 15px;
+body .main img {
+  width: 18em;
+  border-radius: 1em;
 }
-body div.container main.main div.texts {
-  display: flex;
-  flex-direction: column;
-  width: 210px;
-  margin: auto;
-  padding: 15px;
-}
-body div.container main.main div.texts p {
+body .main h1 {
+  font-size: 1.5em;
   color: hsl(218deg, 44%, 22%);
-  font-weight: bold;
-  font-size: 15px;
+  margin: 0.8em 0em;
 }
-body div.container main.main div.texts p:last-child {
+body .main p {
+  font-size: 1em;
   color: hsl(220deg, 15%, 55%);
-  font-weight: lighter;
-  font-size: 12px;
-  margin-top: 10px;
+  margin-bottom: 1em;
 }
 body .attribution {
   position: absolute;
